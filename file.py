@@ -15,5 +15,10 @@ canvas = Canvas(window, width=WIDTH, height=HEIGHT)
 canvas.pack()
 
 volley_ball = Ball(canvas,0,0,100,1,1,"red")
+while True:
+    volley_ball.move()
+    window.update()
+    time.sleep(0.01)
+
 
 window.mainloop()
