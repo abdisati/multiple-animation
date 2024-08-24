@@ -5,4 +5,8 @@ class Ball:
         self.image = canvas.create_oval(x, y, diameter, diameter,fill=color)
         self.xVelocity = xVelocity
         self.yVelocity = yVelocity
+        
+    def move(self):
+        coordinates = self.canvas.coords(self.image)
+        print(coordinates)
     
